@@ -12,7 +12,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/register', { name, email, password });
+      await axios.post('https://location-tracker-backend-fy95.onrender.com/register', { name, email, password });
       navigate('/');
     } catch (err) {
       setError('Error registering user');

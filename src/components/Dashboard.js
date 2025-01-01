@@ -16,7 +16,7 @@ const Dashboard = () => {
   const fetchLocations = async (id) => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/admin/users/${id}/locations`,
+        `https://location-tracker-backend-fy95.onrender.com/admin/users/${id}/locations`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }

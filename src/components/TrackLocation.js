@@ -52,7 +52,7 @@ const TrackLocation = () => {
 
       try {
         await axios.post(
-          "http://localhost:5000/location",
+          "https://location-tracker-backend-fy95.onrender.com/location",
           { latitude, longitude },
           { headers: { Authorization: `Bearer ${token}` } }
         );

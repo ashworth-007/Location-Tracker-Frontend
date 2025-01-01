@@ -10,7 +10,7 @@ const AdminDashboard = () => {
     const fetchUsers = async () => {
       const token = localStorage.getItem("token");
       try {
-        const response = await axios.get("http://localhost:5000/admin/users", {
+        const response = await axios.get("https://location-tracker-backend-fy95.onrender.com/admin/users", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setUsers(response.data);

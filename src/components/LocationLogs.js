@@ -17,7 +17,7 @@ const LocationLogs = () => {
   const fetchLocations = async (userId) => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/admin/users/${userId}/locations`,
+        `https://location-tracker-backend-fy95.onrender.com/admin/users/${userId}/locations`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }
