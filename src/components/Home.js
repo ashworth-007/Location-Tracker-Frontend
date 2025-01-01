@@ -20,7 +20,7 @@ const Home = () => {
       <div className="w-full max-w-md bg-white rounded-lg shadow-md p-6 text-center">
         <h1 className="text-3xl font-semibold text-blue-600 mb-4"></h1>
         <p className="text-gray-600 mb-6">Choose an option to get started:</p>
-        <p className="text-gray-600 mb-6">After successfull login please stay on logged-in page for atleast 10 seconds.</p>
+        <p className="text-gray-600 mb-6">After successfull login please stay on redirected page for atleast 10 seconds.</p>
         <div className="space-y-4">
           {!isLoggedIn && (
             <>
